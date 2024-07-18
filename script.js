@@ -12,9 +12,9 @@ addEventListener("DOMContentLoaded", function(){
         var isValid = true;
         let messages = [];
 
-        if (username.length < 3){
+        if (username.length <= 3){
             isValid = false;
-            messages = ["Please Enter the lenght of the name"];
+            messages = ["push"];
         }else {
             isValid = true;
         }
