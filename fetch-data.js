@@ -11,11 +11,11 @@ async function fetchUserData() {
       dataContainer.innerHTML = '';
       users.forEach(element => {
         const lis = document.createElement('li');
-        const list = document.createElement('ul');
-        dataContainer.append(list);
+        const userList = document.createElement('ul');
+        dataContainer.append(userList);
         lis.textContent = element.name;
         lis.style.listStyle = 'none';
-        list.append(lis);
+        userList.append(lis);
         
       });
     } catch (error) {
