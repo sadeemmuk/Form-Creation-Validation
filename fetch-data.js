@@ -15,7 +15,7 @@ async function fetchUserData() {
         dataContainer.append(userList);
         userList.style.listStyle = 'none';
         li.textContent = element.name;
-        userList.append(li);
+        userList.appendChild(li);
         
         
       });
