@@ -21,7 +21,7 @@ async function fetchUserData() {
       });
     } catch (error) {
       dataContainer.innerHTML = '';
-      error = 'Faild to laod user data.';
+      error = 'Faild to load user data.';
       dataContainer.textContent = error;
     }
   }
