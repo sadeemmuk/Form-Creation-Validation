@@ -10,12 +10,13 @@ async function fetchUserData() {
 
       dataContainer.innerHTML = '';
       users.forEach(element => {
-        const lis = document.createElement('li');
         const userList = document.createElement('ul');
+        const li = document.createElement('li');
         dataContainer.append(userList);
-        lis.textContent = element.name;
-        lis.style.listStyle = 'none';
-        userList.append(lis);
+        userList.style.listStyle = 'none';
+        li.textContent = element.name;
+        userList.append(li);
+        
         
       });
     } catch (error) {
