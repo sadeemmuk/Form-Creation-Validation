@@ -35,11 +35,11 @@ addEventListener("DOMContentLoaded", function(){
 
         feedbackDiv.style.display = 'block';
 
-        if(isValid == true){
+        if(isValid === true){
             feedbackDiv.textContent = 'Registration successful!';
             feedbackDiv.style.color = '#28a745';
-        }else if (isValid == false){
-            feedbackDiv.innerHTML = messages + `<br>`;
+        }else if (isValid === false){
+            feedbackDiv.innerHTML = messages.join() + '<br>';
             feedbackDiv.style.color = "#dc3545";
         }
 
